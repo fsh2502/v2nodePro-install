@@ -1,0 +1,12 @@
+{
+  "Log": {"Level": "info", "Output": "", "Access": "none"},
+  "Nodes": [
+    {
+      "ApiHost": "https://panel.example.com",
+      "NodeID": 123,
+      "ApiKey": "REPLACE_WITH_YOUR_NODE_API_KEY",
+      "Timeout": 15
+    }
+  ],
+  "PprofPort": 0
+}
