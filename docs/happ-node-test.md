@@ -65,7 +65,5 @@ Dữ liệu lấy từ https://github.com/Loyalsoldier/v2ray-rules-dat, không p
 file mẫu hay dữ liệu rút gọn. Tham khảo repo nguồn về các nguồn dữ liệu
 và điều kiện sử dụng của chúng.
 
-Các tag mới `v*-node.*` ban đầu là prerelease để chạy thử. Riêng
-`v26.7.28-node.2` đã được chuyển thành bản chính thức/latest sau khi chủ repo
-chạy thử và chấp thuận. Việc chuyển trạng thái giữ nguyên tag và các gói
-đã thử. Chi tiết migration và rollback: `xray-26.7.28-upgrade.md`.
+Bản chính thức hiện tại là `v0.3.7`. Chi tiết migration và rollback:
+`xray-26.7.28-upgrade.md`.

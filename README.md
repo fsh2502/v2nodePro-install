@@ -1,20 +1,20 @@
-# v2nodePro ? b? c?i ??t
+# v2nodePro installer
 
-B? c?i ??t v? c?c g?i ch?y c?a v2nodePro. B?n m?i nh?t: [v0.3.7](https://github.com/fsh2502/v2nodePro-install/releases/tag/v0.3.7), d?ng Xray Core 26.7.28.
+This repository distributes the installer and runtime packages for v2nodePro. The latest release is [v0.3.7](https://github.com/fsh2502/v2nodePro-install/releases/tag/v0.3.7), built with Xray Core 26.7.28.
 
-Repo n?y ch? ch?a script c?i ??t/qu?n l?, c?u h?nh m?u, t?i li?u v? gi?y ph?p. Binary, GeoIP v? GeoSite n?m trong GitHub Releases. Kh?ng c? m? Go, `go.mod`, `go.sum` hay l?ch s? Git c?a repo m? ngu?n trong b? c?i ??t.
+The repository contains installation and management scripts, a sample configuration, documentation, and the license. Binaries and GeoIP/GeoSite data are GitHub Release assets. No Go application source, Go module files, or source repository Git history is included here.
 
-## C?i ??t Linux
+## Install on Linux
 
 ```bash
 curl -fSL https://raw.githubusercontent.com/fsh2502/v2nodePro-install/main/script/install.sh -o install.sh
 sudo bash install.sh
 ```
 
-Script t? ch?n b?n ph?t h?nh m?i nh?t cho Linux x86_64, ARM64 ho?c s390x, t?i g?i ZIP c?ng file SHA-256 r?i ki?m tra tr??c khi thay b?n ?ang ch?y. C? th? ch? ??nh b?n `v0.3.7` ? cu?i l?nh. C?u h?nh ri?ng n?m t?i `/etc/v2node/config.json`; kh?ng ??a API key l?n GitHub.
+The script selects the latest release for Linux x86_64, ARM64, or s390x. It downloads the ZIP and its SHA-256 file, verifies the package, and only then replaces an existing installation. Append `v0.3.7` to the command to select this version explicitly. Keep node credentials in `/etc/v2node/config.json`; do not upload them to GitHub.
 
-C?c n?n t?ng kh?c: t?i g?i t??ng ?ng ? [Releases](https://github.com/fsh2502/v2nodePro-install/releases), ki?m tra file `.sha256` ?i k?m r?i gi?i n?n. Trong g?i c? binary `v2node`, d? li?u GeoIP/GeoSite, c?u h?nh m?u v? t?i li?u.
+For other platforms, download the matching package from [Releases](https://github.com/fsh2502/v2nodePro-install/releases), verify its adjacent `.sha256` file, and unpack it. Each package contains the executable, GeoIP/GeoSite data, a sample configuration, and documentation.
 
-## M? ngu?n v? gi?y ph?p
+## Source and license
 
-Xem [SOURCE-NOTICE.md](SOURCE-NOTICE.md) v? [LICENSE](LICENSE). Vi?c ph?t h?nh binary kh?ng l?m m?t ngh?a v? cung c?p m? ngu?n t??ng ?ng c?a c?c th?nh ph?n thu?c MPL 2.0. N?u repo m? ngu?n chuy?n sang private, c?n duy tr? c?ch cung c?p m? ngu?n t??ng ?ng cho ng??i nh?n binary.
+See [SOURCE-NOTICE.md](SOURCE-NOTICE.md) and [LICENSE](LICENSE). Distribution of binaries still requires access to the corresponding source of MPL 2.0 covered components. If the source repositories become private, provide that source to binary recipients through another channel.
